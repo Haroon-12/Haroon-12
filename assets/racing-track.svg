@@ -1,547 +1,967 @@
-<svg width="1000" height="320" viewBox="0 0 1000 320" xmlns="http://www.w3.org/2000/svg">
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  xmlns:xlink="http://www.w3.org/1999/xlink"
+  width="1400"
+  height="520"
+  viewBox="0 0 1400 520"
+>
 
-<defs>
+  <defs>
 
-  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-    <stop offset="0%" stop-color="#05070b"/>
-    <stop offset="55%" stop-color="#0b1120"/>
-    <stop offset="100%" stop-color="#111827"/>
-  </linearGradient>
+    <!-- ============================= -->
+    <!-- BACKGROUND -->
+    <!-- ============================= -->
 
-  <linearGradient id="road" x1="0" y1="0" x2="1" y2="1">
-    <stop offset="0%" stop-color="#374151"/>
-    <stop offset="100%" stop-color="#1f2937"/>
-  </linearGradient>
+    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#06090f"/>
+      <stop offset="50%" stop-color="#0b1018"/>
+      <stop offset="100%" stop-color="#05070b"/>
+    </linearGradient>
 
-  <filter id="glow">
-    <feGaussianBlur stdDeviation="4" result="blur"/>
-    <feMerge>
-      <feMergeNode in="blur"/>
-      <feMergeNode in="SourceGraphic"/>
-    </feMerge>
-  </filter>
+    <pattern
+      id="grid"
+      width="40"
+      height="40"
+      patternUnits="userSpaceOnUse"
+    >
+      <path
+        d="M40 0H0V40"
+        fill="none"
+        stroke="#18212c"
+        stroke-width="1"
+      />
+    </pattern>
 
-  <filter id="shadow">
-    <feGaussianBlur stdDeviation="8"/>
-  </filter>
+    <!-- ============================= -->
+    <!-- TRACK -->
+    <!-- ============================= -->
 
-  <!-- Racing line -->
+    <linearGradient id="track" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#3d444e"/>
+      <stop offset="50%" stop-color="#272d36"/>
+      <stop offset="100%" stop-color="#363d47"/>
+    </linearGradient>
 
-<path id="raceLine"
- d="M110 235
-    C95 170 120 105 205 82
-    C300 56 395 70 470 105
-    C540 138 590 155 665 130
-    C755 100 850 105 900 155
-    C950 205 910 260 825 265
-    C730 272 665 225 585 215
-    C495 204 435 238 350 255
-    C250 275 145 285 110 235"/>
+    <!-- ============================= -->
+    <!-- GLOW -->
+    <!-- ============================= -->
 
-</defs>
+    <filter id="glow">
+      <feGaussianBlur
+        stdDeviation="4"
+        result="blur"
+      />
 
-<!-- ===================================================== -->
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
 
-<!-- BACKGROUND -->
+    <!-- ============================= -->
+    <!-- CAR SHADOW -->
+    <!-- ============================= -->
 
-<!-- ===================================================== -->
+    <filter id="carShadow">
 
-<rect
-width="1000"
-height="320"
-rx="24"
-fill="url(#bg)"
-/>
+      <feGaussianBlur
+        in="SourceAlpha"
+        stdDeviation="4"
+        result="blur"
+      />
 
-<!-- subtle grid -->
+      <feOffset
+        dx="3"
+        dy="4"
+        result="offsetblur"
+      />
 
-<g opacity="0.22" stroke="#64748b" stroke-width="1">
+      <feComponentTransfer>
+        <feFuncA
+          type="linear"
+          slope="0.5"
+        />
+      </feComponentTransfer>
 
-  <path d="M60 0V320"/>
-  <path d="M160 0V320"/>
-  <path d="M260 0V320"/>
-  <path d="M360 0V320"/>
-  <path d="M460 0V320"/>
-  <path d="M560 0V320"/>
-  <path d="M660 0V320"/>
-  <path d="M760 0V320"/>
-  <path d="M860 0V320"/>
-  <path d="M960 0V320"/>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
 
-  <path d="M0 60H1000"/>
-  <path d="M0 120H1000"/>
-  <path d="M0 180H1000"/>
-  <path d="M0 240H1000"/>
-  <path d="M0 300H1000"/>
+    </filter>
 
-</g>
 
-<!-- ===================================================== -->
+    <!-- ============================= -->
+    <!-- CLEAN CLOSED RACE CIRCUIT -->
+    <!-- No intersections / no loops -->
+    <!-- ============================= -->
 
-<!-- HEADER -->
+    <path
+      id="circuit"
+      d="
+        M 190 300
 
-<!-- ===================================================== -->
+        C 145 270 145 205 185 170
 
-<text
-x="45"
-y="40"
-fill="#94a3b8"
-font-family="Arial, Helvetica, sans-serif"
-font-size="12"
-letter-spacing="3">
+        C 225 135 290 125 350 140
 
-CAREER TRACK // IN PROGRESS
+        C 405 154 440 190 485 205
 
-</text>
+        C 535 222 585 210 615 175
 
-<circle
-cx="938"
-cy="35"
-r="5"
-fill="#22c55e"
-filter="url(#glow)"
-/>
+        C 645 140 700 120 755 130
 
-<text
-x="955"
-y="40"
-fill="#cbd5e1"
-font-family="Arial, Helvetica, sans-serif"
-font-size="11"
-text-anchor="end">
+        C 820 142 865 180 905 205
 
-SYSTEM ONLINE
+        C 950 232 1015 235 1065 215
 
-</text>
+        C 1120 193 1185 195 1220 230
 
-<!-- ===================================================== -->
+        C 1255 265 1255 325 1220 360
 
-<!-- TRACK SHADOW -->
+        C 1180 400 1115 400 1065 375
 
-<!-- ===================================================== -->
+        C 1010 348 955 350 910 375
 
-<use
-href="#raceLine"
-fill="none"
-stroke="#000000"
-stroke-width="66"
-opacity="0.65"
-filter="url(#shadow)"
-/>
+        C 860 402 800 420 740 405
 
-<!-- ===================================================== -->
+        C 680 390 640 355 590 345
 
-<!-- TRACK -->
+        C 535 334 485 350 435 375
 
-<!-- ===================================================== -->
+        C 380 402 315 410 265 385
 
-<use
-href="#raceLine"
-fill="none"
-stroke="url(#road)"
-stroke-width="52"
-/>
+        C 220 362 205 330 190 300
 
-<!-- track center -->
+        Z
+      "
+      fill="none"
+    />
 
-<use
-href="#raceLine"
-fill="none"
-stroke="#111827"
-stroke-width="43"
-/>
 
-<!-- moving road markings -->
+    <!-- ============================= -->
+    <!-- BMW M5 COMPETITION -->
+    <!-- Top-down / facing right -->
+    <!-- ============================= -->
 
-<use
-href="#raceLine"
-fill="none"
-stroke="#64748b"
-stroke-width="2"
-stroke-dasharray="14 18">
+    <g id="bmwM5">
 
-<animate
- attributeName="stroke-dashoffset"
- from="0"
- to="-64"
- dur="1.2s"
- repeatCount="indefinite"/>
+      <!-- Shadow -->
+      <ellipse
+        cx="5"
+        cy="4"
+        rx="70"
+        ry="28"
+        fill="#000000"
+        opacity="0.5"
+      />
 
-</use>
 
-<!-- ===================================================== -->
+      <!-- Main body -->
+      <path
+        d="
+          M -65 -17
 
-<!-- CHECKPOINT 01 -->
+          C -53 -22 -43 -27 -30 -28
 
-<!-- ===================================================== -->
+          L 18 -28
 
-<g transform="translate(170 82)">
+          C 35 -28 48 -22 60 -14
 
-<circle
- r="18"
- fill="#0b1120"
- stroke="#94a3b8"
- stroke-width="2"/>
+          L 68 -7
 
-<text
- y="5"
- text-anchor="middle"
- fill="#ffffff"
- font-family="Arial"
- font-size="11"
- font-weight="bold">
+          C 73 -3 73 3 68 7
 
-```
-01
-```
+          L 60 14
 
+          C 48 22 35 28 18 28
+
+          L -30 28
+
+          C -43 27 -53 22 -65 17
+
+          L -72 11
+
+          C -77 6 -77 -6 -72 -11
+
+          Z
+        "
+        fill="url(#track)"
+        stroke="#e5e7eb"
+        stroke-width="1.5"
+      />
+
+
+      <!-- Silver body panels -->
+      <path
+        d="
+          M -63 -15
+
+          C -48 -20 -36 -23 -20 -24
+
+          L 20 -24
+
+          C 38 -23 50 -18 61 -10
+
+          L 67 -4
+
+          L 67 4
+
+          L 61 10
+
+          C 50 18 38 23 20 24
+
+          L -20 24
+
+          C -36 23 -48 20 -63 15
+
+          L -69 9
+
+          C -72 5 -72 -5 -69 -9
+
+          Z
+        "
+        fill="#b7bcc4"
+        opacity="0.7"
+      />
+
+
+      <!-- Front bumper -->
+      <path
+        d="
+          M 59 -14
+
+          L 75 -9
+          L 80 0
+          L 75 9
+          L 59 14
+
+          L 67 5
+          L 67 -5
+          Z
+        "
+        fill="#101318"
+      />
+
+
+      <!-- Kidney grille -->
+      <path
+        d="
+          M 66 -7
+          Q 74 -7 78 -3
+          L 78 0
+          L 66 0
+          Z
+        "
+        fill="#030405"
+      />
+
+      <path
+        d="
+          M 66 0
+          L 78 0
+          Q 74 7 66 7
+          Z
+        "
+        fill="#030405"
+      />
+
+
+      <!-- Hood -->
+      <path
+        d="
+          M 18 -21
+
+          C 34 -20 47 -15 57 -9
+
+          L 64 -3
+          L 64 3
+          L 57 9
+
+          C 47 15 34 20 18 21
+
+          Z
+        "
+        fill="#8f96a0"
+        opacity="0.5"
+      />
+
+
+      <!-- Windshield -->
+      <path
+        d="
+          M 5 -21
+
+          C 17 -20 28 -17 37 -12
+
+          L 45 -7
+          L 45 7
+          L 37 12
+
+          C 28 17 17 20 5 21
+
+          Z
+        "
+        fill="#101722"
+        stroke="#66707d"
+        stroke-width="1"
+      />
+
+
+      <!-- Roof -->
+      <path
+        d="
+          M -28 -20
+
+          C -15 -25 0 -26 8 -22
+
+          L 8 22
+
+          C 0 26 -15 25 -28 20
+
+          Z
+        "
+        fill="#080b10"
+        stroke="#4b5563"
+        stroke-width="1.2"
+      />
+
+
+      <!-- Rear window -->
+      <path
+        d="
+          M -48 -16
+
+          C -38 -19 -30 -19 -24 -17
+
+          L -24 17
+
+          C -30 19 -38 19 -48 16
+
+          Z
+        "
+        fill="#111827"
+        stroke="#4b5563"
+        stroke-width="1"
+      />
+
+
+      <!-- BMW M stripes -->
+      <path
+        d="
+          M -5 -22
+          L 2 -23
+          L 2 23
+          L -5 22
+          Z
+        "
+        fill="#2563eb"
+      />
+
+      <path
+        d="
+          M 2 -23
+          L 9 -22
+          L 9 22
+          L 2 23
+          Z
+        "
+        fill="#38bdf8"
+      />
+
+      <path
+        d="
+          M 9 -22
+          L 16 -21
+          L 16 21
+          L 9 22
+          Z
+        "
+        fill="#ef4444"
+      />
+
+
+      <!-- Headlights -->
+      <path
+        d="
+          M 51 -15
+
+          Q 61 -13 68 -8
+
+          L 62 -2
+          L 49 -6
+
+          Z
+        "
+        fill="#dbeafe"
+      />
+
+      <path
+        d="
+          M 51 15
+
+          Q 61 13 68 8
+
+          L 62 2
+          L 49 6
+
+          Z
+        "
+        fill="#dbeafe"
+      />
+
+
+      <!-- LED strips -->
+      <path
+        d="M 53 -11 L 65 -7"
+        stroke="#ffffff"
+        stroke-width="1.5"
+      />
+
+      <path
+        d="M 53 11 L 65 7"
+        stroke="#ffffff"
+        stroke-width="1.5"
+      />
+
+
+      <!-- Side mirrors -->
+      <path
+        d="
+          M 6 -24
+          L 15 -31
+          L 23 -29
+          L 16 -21
+          Z
+        "
+        fill="#080a0d"
+      />
+
+      <path
+        d="
+          M 6 24
+          L 15 31
+          L 23 29
+          L 16 21
+          Z
+        "
+        fill="#080a0d"
+      />
+
+
+      <!-- Door lines -->
+      <path
+        d="
+          M -28 -18
+          L -18 -18
+          L -18 18
+          L -28 18
+        "
+        fill="none"
+        stroke="#6b7280"
+        stroke-width="1"
+      />
+
+      <path
+        d="
+          M -18 -18
+          L 0 -18
+          L 0 18
+          L -18 18
+        "
+        fill="none"
+        stroke="#6b7280"
+        stroke-width="1"
+      />
+
+
+      <!-- Rear lights -->
+      <path
+        d="
+          M -63 -15
+          L -50 -12
+          L -50 -4
+          L -67 -7
+          Z
+        "
+        fill="#dc2626"
+      />
+
+      <path
+        d="
+          M -63 15
+          L -50 12
+          L -50 4
+          L -67 7
+          Z
+        "
+        fill="#dc2626"
+      />
+
+
+      <!-- Wheels -->
+      <g
+        fill="#050505"
+        stroke="#4b5563"
+        stroke-width="2"
+      >
+
+        <rect
+          x="-30"
+          y="-32"
+          width="25"
+          height="10"
+          rx="4"
+        />
+
+        <rect
+          x="25"
+          y="-32"
+          width="25"
+          height="10"
+          rx="4"
+        />
+
+        <rect
+          x="-30"
+          y="22"
+          width="25"
+          height="10"
+          rx="4"
+        />
+
+        <rect
+          x="25"
+          y="22"
+          width="25"
+          height="10"
+          rx="4"
+        />
+
+      </g>
+
+
+      <!-- Wheel highlights -->
+      <g
+        fill="none"
+        stroke="#9ca3af"
+        stroke-width="1"
+      >
+
+        <path d="M -24 -29 L -10 -29"/>
+        <path d="M 31 -29 L 45 -29"/>
+        <path d="M -24 29 L -10 29"/>
+        <path d="M 31 29 L 45 29"/>
+
+      </g>
+
+
+      <!-- M5 badge -->
+      <text
+        x="-40"
+        y="4"
+        fill="#f8fafc"
+        font-family="Arial, Helvetica, sans-serif"
+        font-size="6"
+        font-weight="700"
+        letter-spacing="1"
+      >
+        M5
+      </text>
+
+    </g>
+
+  </defs>
+
+
+  <!-- ========================================= -->
+  <!-- BACKGROUND -->
+  <!-- ========================================= -->
+
+  <rect
+    width="1400"
+    height="520"
+    fill="url(#background)"
+  />
+
+  <rect
+    width="1400"
+    height="520"
+    fill="url(#grid)"
+    opacity="0.4"
+  />
+
+
+  <!-- ========================================= -->
+  <!-- TRACK OUTER BORDER -->
+  <!-- ========================================= -->
+
+  <use
+    xlink:href="#circuit"
+    stroke="#05070a"
+    stroke-width="46"
+    fill="none"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+
+
+  <!-- ========================================= -->
+  <!-- TRACK ROAD -->
+  <!-- ========================================= -->
+
+  <use
+    xlink:href="#circuit"
+    stroke="url(#track)"
+    stroke-width="34"
+    fill="none"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+
+
+  <!-- ========================================= -->
+  <!-- ROAD CENTER MARKING -->
+  <!-- ========================================= -->
+
+  <use
+    xlink:href="#circuit"
+    stroke="#747d89"
+    stroke-width="1.5"
+    stroke-dasharray="14 18"
+    fill="none"
+    opacity="0.75"
+  />
+
+
+  <!-- ========================================= -->
+  <!-- RED RACING LINE -->
+  <!-- ========================================= -->
+
+  <use
+    xlink:href="#circuit"
+    stroke="#ef4444"
+    stroke-width="2"
+    stroke-dasharray="5 22"
+    fill="none"
+    opacity="0.7"
+  />
+
+
+  <!-- ========================================= -->
+  <!-- NAME + ONLINE -->
+  <!-- ========================================= -->
+
+  <g transform="translate(58 58)">
+
+    <circle
+      cx="0"
+      cy="-7"
+      r="5"
+      fill="#22c55e"
+      filter="url(#glow)"
+    />
+
+    <text
+      x="15"
+      y="0"
+      fill="#f8fafc"
+      font-family="Arial, Helvetica, sans-serif"
+      font-size="25"
+      font-weight="700"
+      letter-spacing="3"
+    >
+      HAROON WAHEED
+    </text>
+
+  </g>
+
+
+  <!-- ========================================= -->
+  <!-- START / FINISH -->
+  <!-- ========================================= -->
+
+  <g transform="translate(190 300)">
+
+    <rect
+      x="-4"
+      y="-23"
+      width="8"
+      height="46"
+      fill="#ffffff"
+    />
+
+    <path
+      d="
+        M -4 -23 H 4 V -15 H -4
+        M -4 -7 H 4 V 1 H -4
+        M -4 9 H 4 V 17 H -4
+      "
+      fill="#111827"
+    />
+
+    <text
+      x="14"
+      y="-28"
+      fill="#f8fafc"
+      font-family="Arial, Helvetica, sans-serif"
+      font-size="9"
+      font-weight="700"
+      letter-spacing="2"
+    >
+      START
+    </text>
+
+  </g>
+
+
+  <!-- ========================================= -->
+  <!-- FAST -->
+  <!-- ========================================= -->
+
+  <g transform="translate(210 160)">
+
+    <circle
+      r="6"
+      fill="#ef4444"
+      filter="url(#glow)"
+    />
+
+    <circle
+      r="2"
+      fill="#ffffff"
+    />
+
+    <text
+      x="14"
+      y="-2"
+      fill="#f8fafc"
+      font-family="Arial, Helvetica, sans-serif"
+      font-size="11"
+      font-weight="700"
+      letter-spacing="2"
+    >
+      FAST
+    </text>
+
+    <text
+      x="14"
+      y="12"
+      fill="#64748b"
+      font-family="Arial, Helvetica, sans-serif"
+      font-size="8"
+      letter-spacing="1.5"
+    >
+      2022
+    </text>
+
+  </g>
+
+
+  <!-- ========================================= -->
+  <!-- MOBOROID -->
+  <!-- ========================================= -->
+
+  <g transform="translate(475 205)">
+
+    <circle
+      r="6"
+      fill="#ef4444"
+      filter="url(#glow)"
+    />
+
+    <circle
+      r="2"
+      fill="#ffffff"
+    />
+
+    <text
+      x="14"
+      y="-2"
+      fill="#f8fafc"
+      font-family="Arial, Helvetica, sans-serif"
+      font-size="11"
+      font-weight="700"
+      letter-spacing="2"
+    >
+      MOBOROID
+    </text>
+
+    <text
+      x="14"
+      y="12"
+      fill="#64748b"
+      font-family="Arial, Helvetica, sans-serif"
+      font-size="8"
+      letter-spacing="1.5"
+    >
+      2024
+    </text>
+
+  </g>
+
+
+  <!-- ========================================= -->
+  <!-- TELENOR -->
+  <!-- ========================================= -->
+
+  <g transform="translate(700 128)">
+
+    <circle
+      r="6"
+      fill="#ef4444"
+      filter="url(#glow)"
+    />
+
+    <circle
+      r="2"
+      fill="#ffffff"
+    />
+
+    <text
+      x="14"
+      y="-2"
+      fill="#f8fafc"
+      font-family="Arial, Helvetica, sans-serif"
+      font-size="11"
+      font-weight="700"
+      letter-spacing="2"
+    >
+      TELENOR
+    </text>
+
+    <text
+      x="14"
+      y="12"
+      fill="#64748b"
+      font-family="Arial, Helvetica, sans-serif"
+      font-size="8"
+      letter-spacing="1.5"
+    >
+      2025
+    </text>
+
+  </g>
+
+
+  <!-- ========================================= -->
+  <!-- ZONES -->
+  <!-- ========================================= -->
+
+  <g transform="translate(1060 215)">
+
+    <circle
+      r="7"
+      fill="#22c55e"
+      filter="url(#glow)"
+    />
+
+    <circle
+      r="2"
+      fill="#ffffff"
+    />
+
+    <text
+      x="14"
+      y="-2"
+      fill="#f8fafc"
+      font-family="Arial, Helvetica, sans-serif"
+      font-size="11"
+      font-weight="700"
+      letter-spacing="2"
+    >
+      ZONES
+    </text>
+
+    <text
+      x="14"
+      y="12"
+      fill="#22c55e"
+      font-family="Arial, Helvetica, sans-serif"
+      font-size="8"
+      letter-spacing="1.5"
+    >
+      2026 • NOW
+    </text>
+
+  </g>
+
+
+  <!-- ========================================= -->
+  <!-- NEXT -->
+  <!-- ========================================= -->
+
+  <g transform="translate(1090 375)">
+
+    <circle
+      r="6"
+      fill="#64748b"
+    />
+
+    <text
+      x="14"
+      y="-2"
+      fill="#f8fafc"
+      font-family="Arial, Helvetica, sans-serif"
+      font-size="11"
+      font-weight="700"
+      letter-spacing="2"
+    >
+      NEXT
+    </text>
+
+    <text
+      x="14"
+      y="12"
+      fill="#64748b"
+      font-family="Arial, Helvetica, sans-serif"
+      font-size="8"
+      letter-spacing="1.5"
+    >
+      2026+
+    </text>
+
+  </g>
+
+
+  <!-- ========================================= -->
+  <!-- BMW M5 - MEDIUM SIZE -->
+  <!-- ========================================= -->
+
+  <use
+    xlink:href="#bmwM5"
+    transform="scale(0.60)"
+    filter="url(#carShadow)"
+  >
+
+    <animateMotion
+      dur="7s"
+      repeatCount="indefinite"
+      rotate="auto"
+      calcMode="linear"
+    >
+
+      <mpath xlink:href="#circuit"/>
+
+    </animateMotion>
+
+  </use>
+
+
+  <!-- ========================================= -->
+  <!-- FOOTER -->
+  <!-- ========================================= -->
+
+  <text
+    x="58"
+    y="485"
+    fill="#f8fafc"
+    font-family="Arial, Helvetica, sans-serif"
+    font-size="10"
+    font-weight="700"
+    letter-spacing="3"
+  >
+    LEARN  •  BUILD  •  SHIP  •  REPEAT
   </text>
-
-<text
- y="-28"
- text-anchor="middle"
- fill="#e2e8f0"
- font-family="Arial"
- font-size="13"
- font-weight="bold">
-
-```
-FAST
-```
-
-  </text>
-
-</g>
-
-<!-- ===================================================== -->
-
-<!-- CHECKPOINT 02 -->
-
-<!-- ===================================================== -->
-
-<g transform="translate(395 70)">
-
-<circle
- r="18"
- fill="#0b1120"
- stroke="#94a3b8"
- stroke-width="2"/>
-
-<text
- y="5"
- text-anchor="middle"
- fill="#ffffff"
- font-family="Arial"
- font-size="11"
- font-weight="bold">
-
-```
-02
-```
-
-  </text>
-
-<text
- y="-28"
- text-anchor="middle"
- fill="#e2e8f0"
- font-family="Arial"
- font-size="13"
- font-weight="bold">
-
-```
-MOBOROID
-```
-
-  </text>
-
-</g>
-
-<!-- ===================================================== -->
-
-<!-- CHECKPOINT 03 -->
-
-<!-- ===================================================== -->
-
-<g transform="translate(625 140)">
-
-<circle
- r="18"
- fill="#0b1120"
- stroke="#94a3b8"
- stroke-width="2"/>
-
-<text
- y="5"
- text-anchor="middle"
- fill="#ffffff"
- font-family="Arial"
- font-size="11"
- font-weight="bold">
-
-```
-03
-```
-
-  </text>
-
-<text
- y="-28"
- text-anchor="middle"
- fill="#e2e8f0"
- font-family="Arial"
- font-size="13"
- font-weight="bold">
-
-```
-TELENOR
-```
-
-  </text>
-
-</g>
-
-<!-- ===================================================== -->
-
-<!-- CHECKPOINT 04 -->
-
-<!-- ===================================================== -->
-
-<g transform="translate(850 130)">
-
-<circle
- r="18"
- fill="#0b1120"
- stroke="#94a3b8"
- stroke-width="2"/>
-
-<text
- y="5"
- text-anchor="middle"
- fill="#ffffff"
- font-family="Arial"
- font-size="11"
- font-weight="bold">
-
-```
-04
-```
-
-  </text>
-
-<text
- y="-28"
- text-anchor="middle"
- fill="#e2e8f0"
- font-family="Arial"
- font-size="13"
- font-weight="bold">
-
-```
-ZONES
-```
-
-  </text>
-
-</g>
-
-<!-- ===================================================== -->
-
-<!-- START / FINISH -->
-
-<!-- ===================================================== -->
-
-<g transform="translate(108 224)">
-
-<rect
- x="-4"
- y="-22"
- width="8"
- height="44"
- fill="#f8fafc"/>
-
-<path
- d="M4 -22H29V-10H4ZM4 2H29V14H4Z"
- fill="#111827"/>
-
-</g>
-
-<!-- ===================================================== -->
-
-<!-- ANIMATED CAR GLOW -->
-
-<!-- ===================================================== -->
-
-<circle
-r="16"
-fill="#ffffff"
-opacity="0.18"
-filter="url(#glow)">
-
-<animateMotion
- dur="8s"
- repeatCount="indefinite"
- rotate="auto">
-
-```
-<mpath href="#raceLine"/>
-```
-
-  </animateMotion>
-
-</circle>
-
-<!-- ===================================================== -->
-
-<!-- ANIMATED CAR -->
-
-<!-- ===================================================== -->
-
-<g>
-
-<animateMotion
- dur="8s"
- repeatCount="indefinite"
- rotate="auto">
-
-```
-<mpath href="#raceLine"/>
-```
-
-  </animateMotion>
-
-  <!-- car body -->
-
-<rect
- x="-19"
- y="-8"
- width="38"
- height="16"
- rx="6"
- fill="#f8fafc"
- filter="url(#glow)"/>
-
-  <!-- roof -->
-
-<path
- d="M-11 -8 L-4 -16 H9 L16 -8 Z"
- fill="#94a3b8"/>
-
-  <!-- windshield -->
-
-<path
- d="M-5 -13 H7 L11 -8 H-8 Z"
- fill="#0f172a"/>
-
-  <!-- wheels -->
-
-<circle
- cx="-11"
- cy="8"
- r="4"
- fill="#020617"/>
-
-<circle
- cx="11"
- cy="8"
- r="4"
- fill="#020617"/>
-
-  <!-- headlights -->
-
-<circle
- cx="-13"
- cy="-7"
- r="2"
- fill="#ffffff"/>
-
-<circle
- cx="13"
- cy="-7"
- r="2"
- fill="#ffffff"/>
-
-</g>
-
-<!-- ===================================================== -->
-
-<!-- NEXT CHECKPOINT -->
-
-<!-- ===================================================== -->
-
-<g transform="translate(825 265)">
-
-<circle
- r="28"
- fill="#0b1120"
- stroke="#e2e8f0"
- stroke-width="2"/>
-
-<circle
- r="34"
- fill="none"
- stroke="#64748b"
- stroke-width="1"
- stroke-dasharray="4 8">
-
-```
-<animateTransform
-  attributeName="transform"
-  type="rotate"
-  from="0"
-  to="360"
-  dur="6s"
-  repeatCount="indefinite"/>
-```
-
-  </circle>
-
-<text
- y="-2"
- text-anchor="middle"
- fill="#ffffff"
- font-family="Arial"
- font-size="11"
- font-weight="bold">
-
-```
-NEXT
-```
-
-  </text>
-
-<text
- y="11"
- text-anchor="middle"
- fill="#94a3b8"
- font-family="Arial"
- font-size="8">
-
-```
-BUILD
-```
-
-  </text>
-
-</g>
-
-<!-- ===================================================== -->
-
-<!-- FOOTER LABEL -->
-
-<!-- ===================================================== -->
-
-<text
-x="500"
-y="300"
-text-anchor="middle"
-fill="#64748b"
-font-family="Arial, Helvetica, sans-serif"
-font-size="10"
-letter-spacing="2">
-
-LEARN → BUILD → SHIP → REPEAT
-
-</text>
 
 </svg>
