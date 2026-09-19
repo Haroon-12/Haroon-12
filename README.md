@@ -1,21 +1,23 @@
 <div align="center">
 
-# 🏎️ HAROON.EXE
+# Haroon Waheed
 
-### SOFTWARE ENGINEER · FULL-STACK · BACKEND · DEVOPS · AI
+### Software Engineer · Full Stack · Backend · DevOps · AI
 
-<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=18&duration=3000&pause=1000&color=58A6FF&center=true&vCenter=true&width=600&lines=Turning+ideas+into+real-world+software.;Building+across+the+full+stack.;Exploring+AI%2C+Cloud+%26+DevOps.;Still+learning.+Still+building.+Always+shipping." alt="Typing SVG" />
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=18&pause=1000&center=true&vCenter=true&width=700&lines=Building+products%2C+not+just+projects.;Full+Stack+%7C+Backend+%7C+DevOps+%7C+AI;Always+learning.+Always+building." alt="Typing SVG" />
 
 <br>
 
-<a href="https://www.linkedin.com/in/haroon-waheed-a46b452b1/">
-<img src="https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"/>
+<a href="https://www.linkedin.com/in/haroon--waheed/">
+<img src="https://img.shields.io/badge/LINKEDIN-111827?style=for-the-badge&logo=linkedin&logoColor=white" />
 </a>
+&nbsp;
 <a href="https://haroons-portfolio-one.vercel.app/">
-<img src="https://img.shields.io/badge/Portfolio-Visit-000000?style=for-the-badge&logo=vercel&logoColor=white"/>
+<img src="https://img.shields.io/badge/PORTFOLIO-111827?style=for-the-badge&logo=vercel&logoColor=white" />
 </a>
+&nbsp;
 <a href="https://github.com/Haroon-12">
-<img src="https://img.shields.io/badge/GitHub-Haroon--12-181717?style=for-the-badge&logo=github&logoColor=white"/>
+<img src="https://img.shields.io/badge/GITHUB-111827?style=for-the-badge&logo=github&logoColor=white" />
 </a>
 
 </div>
@@ -24,72 +26,66 @@
 
 <div align="center">
 
-```text
-╔══════════════════════════════════════════════════════════════════╗
-║                                                                  ║
-║     START                                                        ║
-║       │                                                          ║
-║       ▼                                                          ║
-║   🏫 FAST ──────── 💻 MOBOROID ──────── 📚 TELENOR              ║
-║                                                │                 ║
-║                                                ▼                 ║
-║                                           ⚡ ZONES                ║
-║                                                │                 ║
-║                                                ▼                 ║
-║                                     🚀 BUILDING WHAT'S NEXT       ║
-║                                                                  ║
-╚══════════════════════════════════════════════════════════════════╝
-```
+<img src="./assets/racing-track.svg" width="100%" alt="Haroon's animated career racing track" />
 
 </div>
 
 ---
 
-## 👨‍💻 About Me
+## 👋 About Me
 
-I'm **Haroon Waheed**, a Software Engineer at **Zones IT Solutions** and a Software Engineering graduate from **FAST-NUCES Islamabad**.
+I'm a Software Engineer who enjoys turning ideas into products that people can actually use.
 
-I enjoy building things from the ground up, from designing clean interfaces and developing backend systems to deploying applications and figuring out how everything works behind the scenes.
+My work sits around **full-stack development, backend engineering, DevOps, cloud infrastructure, and AI-powered applications**. I like understanding how the pieces fit together, from a frontend interface all the way to APIs, databases, deployments, and infrastructure.
 
-My interests sit at the intersection of:
+Currently working at **Zones IT Solutions**, where I'm getting exposure across different areas of software engineering and continuously expanding my technical range.
 
-`Full-Stack Development` · `Backend Engineering` · `DevOps` · `AI` · `UI/UX`
-
-I like learning by building, experimenting with new technologies, and taking on problems that push me beyond what I already know.
+Outside of work, I'm usually experimenting with something new, building side projects, exploring tools, or figuring out how to make an idea work.
 
 ---
 
-## 🏁 Tech Garage
+## 🛠️ Tech Garage
 
-### 🎨 Frontend
+### Frontend
 
-<img src="https://skillicons.dev/icons?i=react,nextjs,ts,html,css,tailwind" />
+<p>
+<img src="https://skillicons.dev/icons?i=react,nextjs,typescript,javascript,html,css,tailwind" />
+</p>
 
-### ⚙️ Backend
+### Backend
 
-<img src="https://skillicons.dev/icons?i=nodejs,nestjs,python,django,java,spring,go,dotnet" />
+<p>
+<img src="https://skillicons.dev/icons?i=nodejs,nestjs,express,go,python,django,java,spring,dotnet" />
+</p>
 
-### 🗄️ Databases
+### Databases
 
-<img src="https://skillicons.dev/icons?i=mongodb,mysql,postgres" />
+<p>
+<img src="https://skillicons.dev/icons?i=mongodb,mysql,postgresql,redis" />
+</p>
 
-### ☁️ DevOps & Cloud
+### DevOps & Cloud
 
-<img src="https://skillicons.dev/icons?i=docker,kubernetes,jenkins,aws,git,github" />
+<p>
+<img src="https://skillicons.dev/icons?i=docker,kubernetes,jenkins,aws,git,github,linux" />
+</p>
 
 ---
 
-## 🚗 Featured Builds
+## 🚀 Selected Builds
 
 <table>
 <tr>
 <td width="50%">
 
-### 🚀 Splash
+### 🤝 Splash
 
-AI-powered brand × influencer collaboration platform.
+AI-powered brand & influencer collaboration platform.
 
-`Next.js` `Node.js` `AI` `MongoDB` `Stripe`
+**Stack:**
+Next.js · TypeScript · Node.js · MongoDB · AI · Stripe
+
+AI matching, recommendation engine, campaigns, analytics, chatbot, encrypted messaging, affiliate tracking and subscription management.
 
 </td>
 
@@ -97,9 +93,12 @@ AI-powered brand × influencer collaboration platform.
 
 ### 🔐 E2E Messaging
 
-Real-time messaging platform with end-to-end encryption.
+Real-time encrypted messaging application.
 
-`MERN` `Socket.IO` `AES` `RSA`
+**Stack:**
+MERN · Socket.IO · AES · RSA
+
+Built around real-time communication with client-side encryption and secure message exchange.
 
 </td>
 </tr>
@@ -109,19 +108,20 @@ Real-time messaging platform with end-to-end encryption.
 
 ### ☁️ AWS Infrastructure
 
-Cloud deployments involving EC2, RDS, VPC, ALB and Secrets Manager.
+Cloud infrastructure and deployment projects using AWS.
 
-`AWS` `Docker` `MySQL`
+**Stack:**
+AWS · EC2 · RDS · VPC · ALB · Secrets Manager
+
+Designed and deployed multi-service infrastructure with networking, database and application components.
 
 </td>
 
 <td width="50%">
 
-### 🌐 More Projects
+### 🧪 More Projects
 
-Web applications, management systems, experiments and things I'm currently building.
-
-`React` `Node` `Python` `AI`
+A collection of experiments, university projects, prototypes and things built while learning.
 
 </td>
 </tr>
@@ -129,21 +129,40 @@ Web applications, management systems, experiments and things I'm currently build
 
 ---
 
-## 🧭 Currently Exploring
+## 🔭 Currently Exploring
 
 ```text
-🤖 AI & LLM Applications
-☁️ Cloud & DevOps
-🏗️ System Design & Architecture
-🐹 Go
-⛓️ Blockchain
-⚡ Automation
+AI Engineering       █████████████████░░░
+System Design         ███████████████░░░░
+Cloud & DevOps        ████████████████░░░
+Automation            ██████████████░░░░░
+Blockchain            ██████████░░░░░░░░░
 ```
+
+---
+
+## 💡 What I Like Building
+
+`SaaS` · `AI Applications` · `APIs` · `Automation` · `Cloud Systems` · `Developer Tools`
 
 ---
 
 <div align="center">
 
-### 🏎️ Still learning. Still building. Always shipping.
+### 🏎️ Keep building. Keep learning. Keep moving.
+
+<br>
+
+<a href="https://www.linkedin.com/in/haroon--waheed/">
+<img src="https://img.shields.io/badge/01%20%7C%20LINKEDIN-111827?style=for-the-badge&logo=linkedin&logoColor=white" />
+</a>
+&nbsp;
+<a href="https://haroons-portfolio-one.vercel.app/">
+<img src="https://img.shields.io/badge/02%20%7C%20PORTFOLIO-111827?style=for-the-badge&logo=vercel&logoColor=white" />
+</a>
+&nbsp;
+<a href="https://github.com/Haroon-12">
+<img src="https://img.shields.io/badge/03%20%7C%20GITHUB-111827?style=for-the-badge&logo=github&logoColor=white" />
+</a>
 
 </div>
