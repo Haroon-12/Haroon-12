@@ -11,11 +11,15 @@
 <a href="https://www.linkedin.com/in/haroon--waheed/">
 <img src="https://img.shields.io/badge/LINKEDIN-111827?style=for-the-badge&logo=linkedin&logoColor=white" />
 </a>
-&nbsp;
+
+ 
+
 <a href="https://haroons-portfolio-one.vercel.app/">
 <img src="https://img.shields.io/badge/PORTFOLIO-111827?style=for-the-badge&logo=vercel&logoColor=white" />
 </a>
-&nbsp;
+
+ 
+
 <a href="https://github.com/Haroon-12">
 <img src="https://img.shields.io/badge/GITHUB-111827?style=for-the-badge&logo=github&logoColor=white" />
 </a>
@@ -36,7 +40,7 @@
 
 I'm a Software Engineer who enjoys turning ideas into products that people can actually use.
 
-My work sits around **full-stack development, backend engineering, DevOps, cloud infrastructure, and AI-powered applications**. I like understanding how the pieces fit together, from a frontend interface all the way to APIs, databases, deployments, and infrastructure.
+My work sits around **full-stack development, backend engineering, DevOps, cloud infrastructure, and AI-powered applications**. I enjoy understanding how everything connects, from the frontend interface to APIs, databases, deployments, and infrastructure.
 
 Currently working at **Zones IT Solutions**, where I'm getting exposure across different areas of software engineering and continuously expanding my technical range.
 
@@ -76,14 +80,16 @@ Outside of work, I'm usually experimenting with something new, building side pro
 
 <table>
 <tr>
+
 <td width="50%">
 
 ### 🤝 Splash
 
 AI-powered brand & influencer collaboration platform.
 
-**Stack:**
-Next.js · TypeScript · Node.js · MongoDB · AI · Stripe
+**Stack**
+
+`Next.js` · `TypeScript` · `Node.js` · `MongoDB` · `AI` · `Stripe`
 
 AI matching, recommendation engine, campaigns, analytics, chatbot, encrypted messaging, affiliate tracking and subscription management.
 
@@ -95,23 +101,27 @@ AI matching, recommendation engine, campaigns, analytics, chatbot, encrypted mes
 
 Real-time encrypted messaging application.
 
-**Stack:**
-MERN · Socket.IO · AES · RSA
+**Stack**
+
+`MERN` · `Socket.IO` · `AES` · `RSA`
 
 Built around real-time communication with client-side encryption and secure message exchange.
 
 </td>
+
 </tr>
 
 <tr>
+
 <td width="50%">
 
 ### ☁️ AWS Infrastructure
 
 Cloud infrastructure and deployment projects using AWS.
 
-**Stack:**
-AWS · EC2 · RDS · VPC · ALB · Secrets Manager
+**Stack**
+
+`AWS` · `EC2` · `RDS` · `VPC` · `ALB` · `Secrets Manager`
 
 Designed and deployed multi-service infrastructure with networking, database and application components.
 
@@ -123,7 +133,14 @@ Designed and deployed multi-service infrastructure with networking, database and
 
 A collection of experiments, university projects, prototypes and things built while learning.
 
+<br><br>
+
+<a href="https://github.com/Haroon-12">
+Explore my projects ↗
+</a>
+
 </td>
+
 </tr>
 </table>
 
@@ -143,7 +160,13 @@ Blockchain            ██████████░░░░░░░░░
 
 ## 💡 What I Like Building
 
-`SaaS` · `AI Applications` · `APIs` · `Automation` · `Cloud Systems` · `Developer Tools`
+<p align="center">
+
+`SaaS`   `AI Applications`   `APIs`   `Automation`
+
+`Cloud Systems`   `Developer Tools`   `Real-time Apps`
+
+</p>
 
 ---
 
@@ -156,13 +179,21 @@ Blockchain            ██████████░░░░░░░░░
 <a href="https://www.linkedin.com/in/haroon--waheed/">
 <img src="https://img.shields.io/badge/01%20%7C%20LINKEDIN-111827?style=for-the-badge&logo=linkedin&logoColor=white" />
 </a>
-&nbsp;
+
+  
+
 <a href="https://haroons-portfolio-one.vercel.app/">
 <img src="https://img.shields.io/badge/02%20%7C%20PORTFOLIO-111827?style=for-the-badge&logo=vercel&logoColor=white" />
 </a>
-&nbsp;
+
+  
+
 <a href="https://github.com/Haroon-12">
 <img src="https://img.shields.io/badge/03%20%7C%20GITHUB-111827?style=for-the-badge&logo=github&logoColor=white" />
 </a>
+
+<br><br>
+
+<sub>LEARN → BUILD → SHIP → REPEAT</sub>
 
 </div>
