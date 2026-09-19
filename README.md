@@ -8,21 +8,7 @@
 
 <br>
 
-<a href="https://www.linkedin.com/in/haroon--waheed/">
-<img src="https://img.shields.io/badge/LINKEDIN-111827?style=for-the-badge&logo=linkedin&logoColor=white" />
-</a>
-
- 
-
-<a href="https://haroons-portfolio-one.vercel.app/">
-<img src="https://img.shields.io/badge/PORTFOLIO-111827?style=for-the-badge&logo=vercel&logoColor=white" />
-</a>
-
- 
-
-<a href="https://github.com/Haroon-12">
-<img src="https://img.shields.io/badge/GITHUB-111827?style=for-the-badge&logo=github&logoColor=white" />
-</a>
+<a href="https://www.linkedin.com/in/haroon--waheed/"><img src="https://img.shields.io/badge/LINKEDIN-111827?style=for-the-badge&logo=linkedin&logoColor=white" /></a>  <a href="https://haroons-portfolio-one.vercel.app/"><img src="https://img.shields.io/badge/PORTFOLIO-111827?style=for-the-badge&logoColor=white" /></a>
 
 </div>
 
@@ -127,20 +113,6 @@ Designed and deployed multi-service infrastructure with networking, database and
 
 </td>
 
-<td width="50%">
-
-### 🧪 More Projects
-
-A collection of experiments, university projects, prototypes and things built while learning.
-
-<br><br>
-
-<a href="https://github.com/Haroon-12">
-Explore my projects ↗
-</a>
-
-</td>
-
 </tr>
 </table>
 
@@ -148,7 +120,7 @@ Explore my projects ↗
 
 ## 🔭 Currently Exploring
 
-```text
+```text id="z2x8nq"
 AI Engineering       █████████████████░░░
 System Design         ███████████████░░░░
 Cloud & DevOps        ████████████████░░░
@@ -172,24 +144,18 @@ Blockchain            ██████████░░░░░░░░░
 
 <div align="center">
 
-### 🏎️ Keep building. Keep learning. Keep moving.
+### 🏁 FINISH LINE
 
 <br>
 
-<a href="https://www.linkedin.com/in/haroon--waheed/">
+<a href="https://linkedin.com/in/haroon--waheed">
 <img src="https://img.shields.io/badge/01%20%7C%20LINKEDIN-111827?style=for-the-badge&logo=linkedin&logoColor=white" />
 </a>
 
-  
+   
 
 <a href="https://haroons-portfolio-one.vercel.app/">
-<img src="https://img.shields.io/badge/02%20%7C%20PORTFOLIO-111827?style=for-the-badge&logo=vercel&logoColor=white" />
-</a>
-
-  
-
-<a href="https://github.com/Haroon-12">
-<img src="https://img.shields.io/badge/03%20%7C%20GITHUB-111827?style=for-the-badge&logo=github&logoColor=white" />
+<img src="https://img.shields.io/badge/02%20%7C%20PORTFOLIO-111827?style=for-the-badge&logoColor=white" />
 </a>
 
 <br><br>
