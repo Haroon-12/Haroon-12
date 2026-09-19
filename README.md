@@ -8,7 +8,13 @@
 
 <br>
 
-<a href="https://www.linkedin.com/in/haroon--waheed/"><img src="https://img.shields.io/badge/LINKEDIN-111827?style=for-the-badge&logo=linkedin&logoColor=white" /></a>  <a href="https://haroons-portfolio-one.vercel.app/"><img src="https://img.shields.io/badge/PORTFOLIO-111827?style=for-the-badge&logoColor=white" /></a>
+<a href="https://www.linkedin.com/in/haroon--waheed/">
+<img src="https://img.shields.io/badge/LINKEDIN-111827?style=for-the-badge&logo=linkedin&logoColor=white" />
+</a>
+&nbsp;&nbsp;
+<a href="https://haroons-portfolio-one.vercel.app/">
+<img src="https://img.shields.io/badge/PORTFOLIO-111827?style=for-the-badge&logoColor=white" />
+</a>
 
 </div>
 
@@ -34,31 +40,244 @@ Outside of work, I'm usually experimenting with something new, building side pro
 
 ---
 
+## 💼 Experience
+
+<table>
+<tr>
+<td width="25%">
+
+### 🟢 Zones IT Solutions
+
+**Associate Engineer**
+
+2026 – Present
+
+</td>
+
+<td>
+
+Working across different areas of software engineering through a rotation-based environment, with exposure to **full-stack development, backend systems, DevOps, CI/CD, cloud and infrastructure**.
+
+</td>
+</tr>
+
+<tr>
+<td>
+
+### 🔵 Telenor Shared Services
+
+**Frontend Intern**
+
+2025
+
+</td>
+
+<td>
+
+Worked on **Totara LMS**, dashboards, courses and frontend experiences. Built internal demos and onboarding content while collaborating with the team.
+
+</td>
+</tr>
+
+<tr>
+<td>
+
+### 🟣 Moboroid
+
+**Web Development Intern**
+
+2024
+
+</td>
+
+<td>
+
+Worked on **Django-based web applications**, contributing to frontend improvements, bug fixes and backend development while collaborating through Git-based development workflows.
+
+</td>
+</tr>
+</table>
+
+---
+
 ## 🛠️ Tech Garage
 
 ### Frontend
 
-<p>
-<img src="https://skillicons.dev/icons?i=react,nextjs,typescript,javascript,html,css,tailwind" />
-</p>
+<table>
+<tr align="center">
+
+<td width="120">
+<img src="https://skillicons.dev/icons?i=react" width="50"><br>
+<b>React</b>
+</td>
+
+<td width="120">
+<img src="https://skillicons.dev/icons?i=nextjs" width="50"><br>
+<b>Next.js</b>
+</td>
+
+<td width="120">
+<img src="https://skillicons.dev/icons?i=typescript" width="50"><br>
+<b>TypeScript</b>
+</td>
+
+<td width="120">
+<img src="https://skillicons.dev/icons?i=javascript" width="50"><br>
+<b>JavaScript</b>
+</td>
+
+<td width="120">
+<img src="https://skillicons.dev/icons?i=html" width="50"><br>
+<b>HTML</b>
+</td>
+
+<td width="120">
+<img src="https://skillicons.dev/icons?i=css" width="50"><br>
+<b>CSS</b>
+</td>
+
+<td width="120">
+<img src="https://skillicons.dev/icons?i=tailwind" width="50"><br>
+<b>Tailwind</b>
+</td>
+
+</tr>
+</table>
 
 ### Backend
 
-<p>
-<img src="https://skillicons.dev/icons?i=nodejs,nestjs,express,go,python,django,java,spring,dotnet" />
-</p>
+<table>
+<tr align="center">
+
+<td width="120">
+<img src="https://skillicons.dev/icons?i=nodejs" width="50"><br>
+<b>Node.js</b>
+</td>
+
+<td width="120">
+<img src="https://skillicons.dev/icons?i=nestjs" width="50"><br>
+<b>NestJS</b>
+</td>
+
+<td width="120">
+<img src="https://skillicons.dev/icons?i=express" width="50"><br>
+<b>Express</b>
+</td>
+
+<td width="120">
+<img src="https://skillicons.dev/icons?i=go" width="50"><br>
+<b>Go</b>
+</td>
+
+<td width="120">
+<img src="https://skillicons.dev/icons?i=python" width="50"><br>
+<b>Python</b>
+</td>
+
+<td width="120">
+<img src="https://skillicons.dev/icons?i=django" width="50"><br>
+<b>Django</b>
+</td>
+
+<td width="120">
+<img src="https://skillicons.dev/icons?i=java" width="50"><br>
+<b>Java</b>
+</td>
+
+<td width="120">
+<img src="https://skillicons.dev/icons?i=spring" width="50"><br>
+<b>Spring</b>
+</td>
+
+<td width="120">
+<img src="https://skillicons.dev/icons?i=dotnet" width="50"><br>
+<b>.NET</b>
+</td>
+
+</tr>
+</table>
 
 ### Databases
 
-<p>
-<img src="https://skillicons.dev/icons?i=mongodb,mysql,postgresql,redis" />
-</p>
+<table>
+<tr align="center">
+
+<td width="150">
+<img src="https://skillicons.dev/icons?i=mongodb" width="50"><br>
+<b>MongoDB</b>
+</td>
+
+<td width="150">
+<img src="https://skillicons.dev/icons?i=mysql" width="50"><br>
+<b>MySQL</b>
+</td>
+
+<td width="150">
+<img src="https://skillicons.dev/icons?i=postgresql" width="50"><br>
+<b>PostgreSQL</b>
+</td>
+
+<td width="150">
+<img src="https://skillicons.dev/icons?i=redis" width="50"><br>
+<b>Redis</b>
+</td>
+
+<td width="150">
+<img src="https://raw.githubusercontent.com/SmartScaleAI/statussy/main/public/logos/pinecone.svg" width="50" height="50" alt="Pinecone"><br>
+<b>Pinecone</b>
+</td>
+
+</tr>
+</table>
 
 ### DevOps & Cloud
 
-<p>
-<img src="https://skillicons.dev/icons?i=docker,kubernetes,jenkins,aws,git,github,linux" />
-</p>
+<table>
+<tr align="center">
+
+<td width="130">
+<img src="https://skillicons.dev/icons?i=docker" width="50"><br>
+<b>Docker</b>
+</td>
+
+<td width="130">
+<img src="https://skillicons.dev/icons?i=kubernetes" width="50"><br>
+<b>Kubernetes</b>
+</td>
+
+<td width="130">
+<img src="https://skillicons.dev/icons?i=jenkins" width="50"><br>
+<b>Jenkins</b>
+</td>
+
+<td width="130">
+<img src="https://skillicons.dev/icons?i=azure" width="50"><br>
+<b>Azure</b>
+</td>
+
+<td width="130">
+<img src="https://skillicons.dev/icons?i=aws" width="50"><br>
+<b>AWS</b>
+</td>
+
+<td width="130">
+<img src="https://skillicons.dev/icons?i=git" width="50"><br>
+<b>Git</b>
+</td>
+
+<td width="130">
+<img src="https://skillicons.dev/icons?i=github" width="50"><br>
+<b>GitHub</b>
+</td>
+
+<td width="130">
+<img src="https://skillicons.dev/icons?i=linux" width="50"><br>
+<b>Linux</b>
+</td>
+
+</tr>
+</table>
 
 ---
 
@@ -120,7 +339,7 @@ Designed and deployed multi-service infrastructure with networking, database and
 
 ## 🔭 Currently Exploring
 
-```text id="z2x8nq"
+```text
 AI Engineering       █████████████████░░░
 System Design         ███████████████░░░░
 Cloud & DevOps        ████████████████░░░
